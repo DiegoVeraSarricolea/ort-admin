@@ -41,7 +41,7 @@ const Cart = ({ cart }) => {
     return (
         <Container>
             <div className={classes.toolbar} />
-            <Typography className={classes.title} variant="h3">
+            <Typography className={classes.title} variant="h3" gutterBottom>
                 Tu Carro de Compras
             </Typography>
             {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}
